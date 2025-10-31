@@ -1,0 +1,200 @@
+@font-face {
+  font-family: "Futura LT";
+  src: url("FuturaLT-Bold.eot");
+  src: url("FuturaLT-Bold.eot?#iefix") format("embedded-opentype"), url("FuturaLT-Bold.woff2") format("woff2"), url("FuturaLT-Bold.woff") format("woff"), url("FuturaLT-Bold.ttf") format("truetype"), url("FuturaLT-Bold.svg#FuturaLT-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro 6";
+  src: url("NeueHaasGroteskDisplayPro65Medium.eot");
+  src: url("NeueHaasGroteskDisplayPro65Medium.eot?#iefix") format("embedded-opentype"), url("NeueHaasGroteskDisplayPro65Medium.woff2") format("woff2"), url("NeueHaasGroteskDisplayPro65Medium.woff") format("woff"), url("NeueHaasGroteskDisplayPro65Medium.ttf") format("truetype"), url("NeueHaasGroteskDisplayPro65Medium.svg#NeueHaasGroteskDisplayPro65Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro 7";
+  src: url("NeueHaasGroteskDisplayPro75Bold.eot");
+  src: url("NeueHaasGroteskDisplayPro75Bold.eot?#iefix") format("embedded-opentype"), url("NeueHaasGroteskDisplayPro75Bold.woff2") format("woff2"), url("NeueHaasGroteskDisplayPro75Bold.woff") format("woff"), url("NeueHaasGroteskDisplayPro75Bold.ttf") format("truetype"), url("NeueHaasGroteskDisplayPro75Bold.svg#NeueHaasGroteskDisplayPro75Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro 5";
+  src: url("NeueHaasGroteskDisplayPro55Roman.eot");
+  src: url("NeueHaasGroteskDisplayPro55Roman.eot?#iefix") format("embedded-opentype"), url("NeueHaasGroteskDisplayPro55Roman.woff2") format("woff2"), url("NeueHaasGroteskDisplayPro55Roman.woff") format("woff"), url("NeueHaasGroteskDisplayPro55Roman.ttf") format("truetype"), url("NeueHaasGroteskDisplayPro55Roman.svg#NeueHaasGroteskDisplayPro55Roman") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --title-font: "Futura LT", sans-serif;
+  --subtitle-font: "Neue Haas Grotesk Display Pro 6", sans-serif;
+  --primary-font: "Neue Haas Grotesk Display Pro 5", sans-serif;
+  --primary-color: #F5F6FB;
+  --orange-color: #FFAD64;
+  --purple-color: #C3BEF8;
+  --blue-color: #C0EFDB;
+  --pink-color: #FFB2ED;
+  --accent-color: #050131;
+}
+
+h1 {
+  font-family: var(--title-font);
+  font-size: 81px;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+h2 {
+  font-family: var(--subtitle-font);
+  font-size: 36px;
+  line-height: 110%;
+  color: var(--accent-color);
+}
+
+h3 {
+  font-family: var(--subtitle-font);
+  font-size: 24px;
+  line-height: 110%;
+  color: var(--accent-color);
+}
+
+p, div {
+  font-family: var(--primary-font);
+  font-size: 24px;
+  color: var(--accent-color);
+}
+
+a {
+  font-family: var(--primary-font);
+  font-size: 24px;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.button {
+  font-family: var(--subtitle-font);
+  font-size: 24px;
+  color: var(--primary-color);
+  display: block;
+  padding: 14px 32px 16px 32px;
+  background-color: var(--accent-color);
+  border-bottom: solid 4px var(--accent-color);
+}
+
+.button:hover {
+  font-family: var(--subtitle-font);
+  font-size: 24px;
+  color: var(--accent-color);
+  display: block;
+  padding: 14px 32px 16px 32px;
+  background-color: var(--purple-color);
+  border: solid 2px var(--accent-color);
+  border-bottom: solid 4px var(--accent-color);
+  border-right: solid 4px var(--accent-color);
+}
+
+.orange {
+  background-color: var(--orange-color);
+}
+
+.pink {
+  background-color: var(--pink-color);
+}
+
+.purple {
+  background-color: var(--purple-color);
+}
+
+.blue {
+  background-color: var(--blue-color);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+.container {
+  width: 1220px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--orange-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 240px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1000;
+}
+header .logo img {
+  width: 118px;
+  height: 40px;
+}
+header .menu {
+  display: flex;
+  padding: 8px 0;
+  gap: 48px;
+}
+
+footer {
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+}
+footer h3, footer ul {
+  color: var(--primary-color);
+}
+footer .content {
+  display: flex;
+  gap: 80px;
+}
+footer .content .tuitors {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .content .social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .content .social .icons {
+  display: flex;
+}
+footer .content .social .icons a {
+  font-size: 0;
+  display: block;
+}
+footer .logo {
+  display: flex;
+  gap: 64px;
+}
+footer .logo .logo-km img {
+  width: 319px;
+  height: 120px;
+}
+footer .logo .logo-hse img {
+  width: 307px;
+  height: 120px;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 64px 0;
+}/*# sourceMappingURL=basics.css.map */

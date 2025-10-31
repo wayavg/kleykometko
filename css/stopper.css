@@ -1,0 +1,115 @@
+@import 'var.css';
+@import 'basics.css';
+header {
+  background-color: var(--pink-color);
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: 56px;
+  padding-bottom: 10vh;
+  background-image: url("../image/stopper_main-bg.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  background-position-y: 120px;
+}
+.main .content {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.main .content .main-logo {
+  width: 100%;
+}
+.main .content p {
+  max-width: 485px;
+}
+.main .sqroll {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+.main .sqroll img {
+  width: 56px;
+  height: 29px;
+}
+
+.triggers {
+  background-color: #EAEDFB;
+  background-image: url(../image/stopper_triggers-bg.svg);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center;
+}
+.triggers .container {
+  height: 100vh;
+}
+.triggers .container .trigger {
+  padding: 30px 50px;
+  margin-top: 200px;
+  display: inline-block;
+  border: solid 2px var(--accent-color);
+  border-bottom: solid 4px var(--accent-color);
+  border-right: solid 4px var(--accent-color);
+  font-family: var(--subtitle-font);
+}
+.triggers .container .blue {
+  transform: rotate(7deg);
+}
+.triggers .container .pink {
+  transform: rotate(-6deg);
+  margin-left: 400px;
+  margin-top: 120px;
+}
+.triggers .container .purple {
+  transform: rotate(16deg);
+  margin-left: 50px;
+  margin-top: 100px;
+}
+.triggers .container .orange {
+  transform: rotate(-5deg);
+  margin-left: 600px;
+  margin-top: 70px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding: 120px 0;
+  background-image: url("../image/stopper_form-bg.svg");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 200%;
+  z-index: 100;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.form form input {
+  all: unset;
+  font-family: var(--primary-font);
+  font-size: 24px;
+  color: var(--accent-color);
+  border-bottom: solid 4px var(--accent-color);
+  width: 620px;
+}
+.form form input::-moz-placeholder {
+  color: var(--accent-color);
+  opacity: 1;
+}
+.form form input::placeholder {
+  color: var(--accent-color);
+  opacity: 1;
+}
+.form form button {
+  width: 300px;
+}/*# sourceMappingURL=stopper.css.map */

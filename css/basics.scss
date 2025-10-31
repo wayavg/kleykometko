@@ -1,0 +1,161 @@
+@import 'var.scss';
+
+h1 {
+    font-family: var(--title-font);
+    font-size: 81px;
+    text-transform: uppercase;
+    color: var(--accent-color);
+}
+
+h2 {
+    font-family: var(--subtitle-font);
+    font-size: 36px;
+    line-height: 110%;
+    color: var(--accent-color);
+}
+
+h3 {
+    font-family: var(--subtitle-font);
+    font-size: 24px;
+    line-height: 110%;
+    color: var(--accent-color);
+}
+
+p, div {
+    font-family: var(--primary-font);
+    font-size: 24px;
+    color: var(--accent-color);
+}
+
+a {
+    font-family: var(--primary-font);
+    font-size: 24px;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.button {
+    font-family: var(--subtitle-font);
+    font-size: 24px;
+    color: var(--primary-color);
+    display: block;
+    padding: 14px 32px 16px 32px;
+    background-color: var(--accent-color);
+    border-bottom: solid 4px var(--accent-color);
+}
+
+.button:hover {
+    font-family: var(--subtitle-font);
+    font-size: 24px;
+    color: var(--accent-color);
+    display: block;
+    padding: 14px 32px 16px 32px;
+    background-color: var(--purple-color);
+    border: solid 2px var(--accent-color);
+    border-bottom: solid 4px var(--accent-color);
+    border-right: solid 4px var(--accent-color);
+}
+
+.orange {
+    background-color: var(--orange-color);
+}
+.pink {
+    background-color: var(--pink-color);
+}
+.purple {
+    background-color: var(--purple-color);
+}
+.blue {
+    background-color: var(--blue-color);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+
+.container {
+    width: 1220px;
+    margin: 0 auto;
+}
+
+header {
+    .logo img {
+        width: 118px;
+        height: 40px;
+    }
+
+    .menu {
+        display: flex;
+        padding: 8px 0;
+        gap: 48px;
+    }
+
+    background-color: var(--orange-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 240px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+footer {
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+    h3, ul {
+        color: var(--primary-color);
+    }
+    .content {
+        .tuitors {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .social {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .icons {
+                a {
+                font-size: 0;
+                display: block;
+                }
+                display: flex;
+            }
+        }
+
+        display: flex;
+        gap: 80px;
+    }
+    .logo {
+        .logo-km img {
+            width: 319px;
+            height: 120px;
+        }
+
+        .logo-hse img {
+            width: 307px;
+            height: 120px;
+        }
+        display: flex;
+        gap: 64px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 64px 0;
+    }
+}

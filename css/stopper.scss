@@ -1,0 +1,121 @@
+@import 'var.css';
+@import 'basics.css';
+
+header {
+    background-color: var(--pink-color);
+}
+
+.main {
+    .content {
+        .main-logo {
+            width: 100%;
+        }
+
+        p {
+            max-width: 485px;
+        }
+
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .sqroll {
+        img {
+            width: 56px;
+            height: 29px;
+        }
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 56px;
+    padding-bottom: 10vh;
+    background-image: url('../image/stopper_main-bg.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    background-position-y: +120px;
+}
+
+.triggers {
+    .container {
+        .trigger {
+        padding: 30px 50px;
+        margin-top: 200px;
+        display:inline-block;
+        border: solid 2px var(--accent-color);
+        border-bottom: solid 4px var(--accent-color);
+        border-right: solid 4px var(--accent-color);
+        font-family: var(--subtitle-font);
+        }
+
+        .blue {
+            transform: rotate(7deg);
+        }
+
+        .pink {
+            transform: rotate(-6deg);
+            margin-left: 400px;
+            margin-top: 120px;
+        }
+
+        .purple {
+            transform: rotate(16deg);
+            margin-left: 50px;
+            margin-top: 100px;
+        }
+
+        .orange {
+            transform: rotate(-5deg);
+            margin-left: 600px;
+            margin-top: 70px;
+        }
+
+        height: 100vh;
+    }
+    background-color: #EAEDFB;
+    background-image: url(../image/stopper_triggers-bg.svg);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+}
+
+.form {
+    form {
+        display: flex;
+        flex-direction: column;
+        input {
+            all: unset;
+            font-family: var(--primary-font);
+            font-size: 24px;
+            color: var(--accent-color);
+            border-bottom: solid 4px var(--accent-color);
+            width: 620px;
+        }
+        input::placeholder {  
+            color: var(--accent-color);  
+            opacity: 1;  
+        }
+        button {
+            width: 300px;
+        }
+        gap: 24px;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding: 120px 0;
+    background-image: url('../image/stopper_form-bg.svg');
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 200%;
+    z-index: 100;
+}
